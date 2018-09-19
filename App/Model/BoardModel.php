@@ -27,7 +27,7 @@ class BoardModel extends Core {
 		$column = $this->getColumn($_POST, $cancel).$add_sql;
 		if ($this->query_result($action, "board", $column)) {
 			alert('완료되었습니다.');
-			move($this->param->get_page);
+			move(HOME_URL);
 		}
 	}
 }

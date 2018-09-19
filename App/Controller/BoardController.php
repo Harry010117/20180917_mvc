@@ -18,7 +18,7 @@ class BoardController extends Core {
 	function delete () {
 		$this->model->query("DELETE FROM board where idx = '{$this->param->idx}'");
 		alert('삭제되었습니다.');
-		move($this->param->get_page);
+		move(HOME_URL);
 		exit;
 	}
 }
